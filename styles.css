@@ -1,0 +1,110 @@
+:root{
+/*Primary */
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+/* Neutral */
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-light-gray);
+}
+.container{
+    margin: 5vh 0;
+    width: 300px;
+    height: 1200px;
+    background-color: #CCC;
+    color: var(--Transparent-white);
+    display: flex;
+    flex-direction: column;
+}
+.card{
+    height: 33.33%;
+    padding: 10%;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+}
+.card h1{
+    color: var(--Very-light-gray);
+    font-size: 2rem;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+.card p{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    width: 93%;
+}
+.card button{
+    background-color: var(--Very-light-gray);
+    border-radius: 30px;
+    margin: 30px 0;
+    height: 45px;
+    width: 60%;
+    border: none;
+    font-size: 0.9rem;
+    transition: 0.5s ease;
+}
+.card button:hover{
+    border: 2px solid var(--Very-light-gray);
+    color: var(--Very-light-gray);
+}
+.card-1 button:hover{
+    background-color: var(--Bright-orange);
+}
+.card-2 button:hover{
+    background-color: var(--Dark-cyan);
+}
+.card-3 button:hover{
+    background-color: var(--Very-dark-cyan);
+}
+.card-1{
+    background-color: var(--Bright-orange);
+}
+.card-2{
+    background-color: var(--Dark-cyan);
+}
+.card-3{
+    background-color: var(--Very-dark-cyan);
+}
+.card-1 button{
+    color: var(--Bright-orange);
+}
+.card-2 button{
+    color: var(--Dark-cyan);
+}
+.card-3 button{
+    color: var(--Very-dark-cyan);
+}
+
+@media (min-width:900px){
+    .container{
+        width: 900px;
+        height: 480px;
+        display: flex;
+        flex-direction: row;
+    }
+    .card{
+        height: 100%;
+        padding: 5%;
+    }
+    .card h1{
+        font-size: 2.2rem;
+    }
+    .card button{
+        margin: 90px 0;
+    }
+}
